@@ -3,7 +3,7 @@ package co.lalytus.java;
 public class Runner {
 
 	public static void main(String[] args) {
-		String name = "Míchico";
+		String name = "Xin";
 		System.out.println("Hello " + name);
 		int age = 11;
 		System.out.println(name + " tiene " + age + " años");
