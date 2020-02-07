@@ -7,7 +7,7 @@ public class Runner {
 		System.out.println("Hello " + name);
 		int age = 5;
 		System.out.println(name + " tiene " + age + " años");
-		double weight = 9.0;
+		double weight = 4.0;
 		System.out.println(name + " pesa " + weight + " Kg");
 		if (weight >= 5) {
 			System.out.println(name + " está gordo");
@@ -27,12 +27,14 @@ public class Runner {
 			kindFood = "Pienso normal";
 		}
 		System.out.println(name + " come " + kindFood);
-		int lives = 3;
+		int lives = 7;
 		System.out.println(name + " tiene " + lives + " vidas");
 		if (weight >= 5 && kindFood.equals("Pienso normal")) {
 			lives--;
 			System.out.println(name + " tiene " + (lives) + " vidas");
 		}
-
+		int lostLives = age / 3;
+		lives = lives - lostLives;
+		System.out.println("Ahora Míchico tiene " + lives + " vidas");
 	}
 }
