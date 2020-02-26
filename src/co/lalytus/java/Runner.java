@@ -3,16 +3,16 @@ package co.lalytus.java;
 public class Runner {
 
 	public static void main(String[] args) {
-		String name = "Xin";
+		String name = "Míchico";
 		System.out.println("Hello " + name);
-		int age = 11;
+		int age = 5;
 		System.out.println(name + " tiene " + age + " años");
-		double weight = 3.0;
+		double weight = 4.0;
 		System.out.println(name + " pesa " + weight + " Kg");
 		if (weight >= 5) {
 			System.out.println(name + " está gordo");
 		}
-		boolean castreated = true;
+		boolean castreated = false;
 		if (castreated) {
 			System.out.println("Cat childless");
 		} else {
@@ -27,6 +27,14 @@ public class Runner {
 			kindFood = "Pienso normal";
 		}
 		System.out.println(name + " come " + kindFood);
-
+		int lives = 7;
+		System.out.println(name + " tiene " + lives + " vidas");
+		if (weight >= 5 && kindFood.equals("Pienso normal")) {
+			lives--;
+			System.out.println(name + " tiene " + (lives) + " vidas");
+		}
+		int lostLives = age / 3;
+		lives = lives - lostLives;
+		System.out.println("Ahora Míchico tiene " + lives + " vidas");
 	}
 }
